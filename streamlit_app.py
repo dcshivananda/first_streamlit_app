@@ -1,6 +1,3 @@
-import streamlit
-streamlit.title('My Parents New Healthy Diner')
-streamlit.header('Breakfast Menu')
-streamlit.text('Omega 3 and Blueberry Oatmeal')
-streamlit.text('Kale, Spinach and Rocket Smoothie')
-streamlit.text('Hard boiled free range egg')
+import pandas as pd
+my_fruits_list = pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt')
+streamlit.dataframe('my_fruits_list')
